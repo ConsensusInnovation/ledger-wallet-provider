@@ -288,7 +288,7 @@ class LedgerWallet {
    * @param {failableCallback} callback
    */
   getAccounts(callback) {
-    this.getMultipleAccounts(this.path, 0, 1)
+    this.getMultipleAccounts(this.path, 0, 5)
       .then(res => callback(null, Object.values(res)))
       .catch(err => callback(err, null));
   }
